@@ -16,6 +16,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -34,6 +35,8 @@ public class SearchSite_forString {
     	driver = Hooks.driver;
     	driver.manage().deleteAllCookies();
     	driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+    	Actions builder = new Actions(driver);
+
      	//datamap = DataHelper.data(System.getProperty("user.dir")+"//src//test//resources//testData/default.xlsx","Sheet1");
     }
 	
@@ -47,7 +50,7 @@ public class SearchSite_forString {
 	    System.out.println(driver.getCurrentUrl());
 	    System.out.println("end of test searches Given");
 
-	    Thread.sleep(5000);
+	    Thread.sleep(500);
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new PendingException();
 	}
@@ -69,7 +72,7 @@ public class SearchSite_forString {
 		driver.findElement(By.name("q")).sendKeys(arg1+"\n");
 		// .//*[@name='q']   Bing #sb_form_q
 	    System.out.println("end of test searches When \n");
-	    Thread.sleep(5000);
+	    Thread.sleep(500);
 	}
 
 	@Then("^Verify ICD portal is the first result using locator \"(.*?)\"$")
@@ -94,8 +97,12 @@ public class SearchSite_forString {
 	    assertThat(hrefURL, containsString("https://icdportal.info"));
 	    Thread.sleep(5000);
 	    webElem = driver.findElement(By.xpath(arg1));
-	    webElem.click();
+    	//WebElement web_Element_To_Be_Hovered = webDriver.findElement(By.cssSelector(selector_For_Web_Element_To_Be_Hovered));
+    	Actions builder = new Actions(driver);
+    	builder.moveToElement(webElem).build().perform();
 	    Thread.sleep(4000);
+
+	    webElem.click();
 	    System.out.println("Site URL is "+driver.getCurrentUrl());
 	    String pageTitle = driver.getTitle();
 	    System.out.println("Page Title is "+pageTitle);

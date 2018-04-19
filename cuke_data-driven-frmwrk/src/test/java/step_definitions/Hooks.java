@@ -6,6 +6,7 @@ import java.net.URL;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 //import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -31,7 +32,7 @@ public class Hooks{
         String seleniumSrvHost="localhost";
         String seleniumSrvPort="4444";
    	 driver = new RemoteWebDriver(new URL("http://"+ seleniumSrvHost+":"+seleniumSrvPort +"/wd/hub"), chromeBrowser);
-    	driver.manage().deleteAllCookies();
+   	 driver.manage().deleteAllCookies();
     	//driver.manage().window().maximize();
     }
 
