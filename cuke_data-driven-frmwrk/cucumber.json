@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3728812709,
+              "duration": 3493453944,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 76108322,
+              "duration": 60187680,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3896684203,
+              "duration": 4142789000,
               "status": "passed"
             },
             "line": 3,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 836359362,
+              "duration": 1025940947,
               "status": "passed"
             },
             "line": 4,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 20750176484,
+              "duration": 20735734594,
               "status": "passed"
             },
             "line": 5,
@@ -80,7 +80,7 @@
         "before": [
           {
             "result": {
-              "duration": 4037608898,
+              "duration": 3490789188,
               "status": "passed"
             },
             "match": {
@@ -95,7 +95,7 @@
         "after": [
           {
             "result": {
-              "duration": 91286859,
+              "duration": 70315462,
               "status": "passed"
             },
             "match": {
@@ -108,7 +108,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3059792572,
+              "duration": 3615023155,
               "status": "passed"
             },
             "line": 7,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 985657398,
+              "duration": 999474214,
               "status": "passed"
             },
             "line": 8,
@@ -132,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 20753985620,
+              "duration": 20667980166,
               "status": "passed"
             },
             "line": 9,
@@ -157,7 +157,7 @@
         "before": [
           {
             "result": {
-              "duration": 2988403361,
+              "duration": 3129617391,
               "status": "passed"
             },
             "match": {
@@ -172,7 +172,7 @@
         "after": [
           {
             "result": {
-              "duration": 82434134,
+              "duration": 84901338,
               "status": "passed"
             },
             "match": {
@@ -185,7 +185,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3316784317,
+              "duration": 3682461976,
               "status": "passed"
             },
             "line": 7,
@@ -197,7 +197,7 @@
           },
           {
             "result": {
-              "duration": 892660795,
+              "duration": 1003164953,
               "status": "passed"
             },
             "line": 8,
@@ -209,7 +209,7 @@
           },
           {
             "result": {
-              "duration": 20725607494,
+              "duration": 20765330797,
               "status": "passed"
             },
             "line": 9,
@@ -236,5 +236,134 @@
     "id": "fill-a-simple-form-with-excel-data",
     "keyword": "Feature",
     "uri": "features/DataDrivenFramework.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3264801769,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Test searches",
+        "description": "",
+        "id": "search-sites-for-icd;test-searches;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 68414989,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3548865874,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "^I have navigated to \"Bing\"  for test case \"3\" Search http://bing.com for \"Institutional Cash Distributors\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bing\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"3\"",
+                  "offset": 43
+                },
+                {
+                  "val": "http://bing.com",
+                  "offset": 54
+                },
+                {
+                  "val": "\"Institutional Cash Distributors\"",
+                  "offset": 74
+                }
+              ],
+              "location": "SearchSite_forString.i_have_navigated_to_for_test_case_Search_for(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 96218,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on search site \"Bing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bing",
+                  "offset": 21
+                }
+              ],
+              "location": "SearchSite_forString.i_am_on_search_site(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1369569,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat step_definitions.SearchSite_forString.i_have_entered_a_search_for(SearchSite_forString.java:59)\r\n\tat ✽.And I have entered a search for \"search_string\"(features/SearchSite_forString.feature:5)\r\n",
+              "status": "pending"
+            },
+            "line": 5,
+            "name": "I have entered a search for \"search_string\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "search_string",
+                  "offset": 29
+                }
+              ],
+              "location": "SearchSite_forString.i_have_entered_a_search_for(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Verify ICD portal is the first result",
+            "match": {
+              "location": "SearchSite_forString.verify_ICD_portal_is_the_first_result()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search sites for ICD",
+    "description": "",
+    "id": "search-sites-for-icd",
+    "keyword": "Feature",
+    "uri": "features/SearchSite_forString.feature"
   }
 ]

@@ -1,28 +1,12 @@
 [
   {
-    "id": "seleniumframework.com-features",
-    "description": "",
-    "name": "seleniumframework.com features",
-    "keyword": "Feature",
     "line": 1,
     "elements": [
       {
-        "after": [
-          {
-            "result": {
-              "duration": 1313147009,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "id": "seleniumframework.com-features;open-seleniumframework-website",
         "before": [
           {
             "result": {
-              "duration": 3805186237,
+              "duration": 5757281934,
               "status": "passed"
             },
             "match": {
@@ -30,67 +14,76 @@
             }
           }
         ],
-        "description": "",
-        "name": "Open seleniumframework website",
-        "keyword": "Scenario",
         "line": 2,
+        "name": "Open seleniumframework website",
+        "description": "",
+        "id": "seleniumframework.com-features;open-seleniumframework-website",
+        "after": [
+          {
+            "result": {
+              "duration": 604784484,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7351082574,
+              "duration": 21566942889,
               "status": "passed"
             },
-            "name": "I open seleniumframework website",
-            "keyword": "Given ",
             "line": 3,
+            "name": "I open seleniumframework website",
             "match": {
               "location": "BrowserCommands.i_open_seleniumframework_website()"
-            }
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2237830206,
-              "status": "passed"
+              "duration": 20882529261,
+              "error_message": "org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for element to be clickable: By.linkText: ABOUT\nBuild info: version: \u00272.44.0\u0027, revision: \u002776d78cf323ce037c5f92db6c1bba601c2ac43ad8\u0027, time: \u00272014-10-23 13:11:40\u0027\nSystem info: host: \u0027p5wDH\u0027, ip: \u002710.0.0.5\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_172\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir\u003dC:\\Users\\kmartin\\AppData\\Local\\Temp\\scoped_dir8884_22303}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d65.0.3325.181, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, webdriver.remote.sessionid\u003ddf778a066a0d7d0a74cde28f35ca4d2c, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: df778a066a0d7d0a74cde28f35ca4d2c\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)\r\n\tat step_definitions.BrowserCommands.i_navigate_to_ABOUT_link(BrowserCommands.java:27)\r\n\tat ✽.And I navigate to ABOUT link(features/BrowserCommands.feature:4)\r\nCaused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"ABOUT\"}\n  (Session info: chrome\u003d65.0.3325.181)\n  (Driver info: chromedriver\u003d2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 20.87 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.44.0\u0027, revision: \u002776d78cf323ce037c5f92db6c1bba601c2ac43ad8\u0027, time: \u00272014-10-23 13:11:40\u0027\nSystem info: host: \u0027p5wDH\u0027, ip: \u002710.0.0.5\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_172\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir\u003dC:\\Users\\kmartin\\AppData\\Local\\Temp\\scoped_dir8884_22303}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d65.0.3325.181, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, webdriver.remote.sessionid\u003ddf778a066a0d7d0a74cde28f35ca4d2c, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: df778a066a0d7d0a74cde28f35ca4d2c\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:401)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:242)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:528)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$17.apply(ExpectedConditions.java:521)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat step_definitions.BrowserCommands.i_navigate_to_ABOUT_link(BrowserCommands.java:27)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:34)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:30)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:35)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:298)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
+              "status": "failed"
             },
-            "name": "I navigate to ABOUT link",
-            "keyword": "And ",
             "line": 4,
+            "name": "I navigate to ABOUT link",
             "match": {
               "location": "BrowserCommands.i_navigate_to_ABOUT_link()"
-            }
+            },
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 45968195,
-              "status": "passed"
+              "status": "skipped"
             },
-            "name": "I print the html",
-            "keyword": "Then ",
+            "output": [
+              "Current Page URL is http://www.seleniumframework.com/"
+            ],
+            "embeddings": [
+              {
+                "data": "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K6ABAAAAAIgQoAEAAAAAiLAFBwBcjsotNey8AQAAwHFYAQ0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAxM3aEwAAZrq/v197CgAAAFBiBTQAAAAAABECNAAAAAAAEc+22+3acwAAAAAA4AJZAQ0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQAAAABAhAANAAAAAECEAA0AAAAAQIQADQCX7O7u7u7ubu1ZMOp6vqCj3en1PFIAADgLN2tPAACYrKavff78ecY1p551akMc30XeFAAAwFKsgAYAVnaR61Uv8qYAAACmsgIaAM5PZ73tIotwj7CGd3CICwi1/fu6gJsCAABYhBXQAAAzCc0AAABlAjQAAAAAABG24ACAa9Ferju2a8Tg5h6Fs8qjdE7pDNE+snndP37S6GPnTr1ye6qF51befGPwpirnPHbKvGfSv52pz7ly3PJjHzzswDutuRQAALAiK6AB4Cp0cl7N3hEz9pdYcEuK/qXu7u4qr18+bPDKlQfn9tzoD1Qzz/pnUrjC3mtWPrF5307lpWoeiB1RAADgBFkBDQCXb3Dp8d3dXWHF6N51soefMrYgt33ipAnUn9v/aPBpzHhuhZvaO+fyzR7yTJqDZz/nvU+s8lI1j3TSpWomDwAArMgKaAC4Cu1IN2+nghlnzRtobOeK/oYY9UMXbr88ycOf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5AA4Z51qXPljhnIzAFyGX6w9AQDg1E2tyeozwOWZl4MHz2pv7gwAXDwroAGA/9deBN3esrm/FHrw0+bNzqd6NMCZamfivauYD1yt3LngTz/91O/UFkQDwDl6tt1u154DADDBv//xf9aewkn4jz/4/+gAAACnzhYcAAAAAABECNAAAAAAAKmhQMcAAA0XSURBVEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAcGZ+9cu1Z3ACPAQAAICzIEADwJn53d0PV55ff/XLze/uflh7FgAAAOz3bLvdrj0HAAAAAAAukBXQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAAAARAjQAAAAAABECNAAAAAAAEQI0AAAAADA/7VjxwIAAAAAg/ytR7GvMIKFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAIBFp49Uvyu2a8QAAAAASUVORK5CYII\u003d",
+                "mime_type": "image/png"
+              }
+            ],
             "line": 5,
+            "name": "I print the html",
             "match": {
               "location": "BrowserCommands.i_print_the_html()"
-            }
+            },
+            "keyword": "Then "
           }
-        ],
-        "type": "scenario"
+        ]
       },
       {
-        "after": [
-          {
-            "result": {
-              "duration": 1652953105,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "id": "seleniumframework.com-features;browser-commands",
         "before": [
           {
             "result": {
-              "duration": 2525288666,
+              "duration": 3858664503,
               "status": "passed"
             },
             "match": {
@@ -98,65 +91,65 @@
             }
           }
         ],
-        "description": "",
-        "name": "Browser commands",
-        "keyword": "Scenario",
         "line": 6,
-        "steps": [
+        "name": "Browser commands",
+        "description": "",
+        "id": "seleniumframework.com-features;browser-commands",
+        "after": [
           {
             "result": {
-              "duration": 10384451929,
+              "duration": 2053848560,
               "status": "passed"
             },
-            "name": "I open seleniumframework website",
-            "keyword": "Given ",
-            "line": 7,
             "match": {
-              "location": "BrowserCommands.i_open_seleniumframework_website()"
-            }
-          },
-          {
-            "result": {
-              "duration": 11106889723,
-              "status": "passed"
-            },
-            "name": "I perform selenium browser commands",
-            "keyword": "Then ",
-            "line": 8,
-            "match": {
-              "location": "BrowserCommands.i_perform_selenium_browser_commands()"
+              "location": "Hooks.embedScreenshot(Scenario)"
             }
           }
         ],
-        "type": "scenario"
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 134957437589,
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome\u003d65.0.3325.181)\n  (Driver info: chromedriver\u003d2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform\u003dWindows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 134.96 seconds\nBuild info: version: \u00272.44.0\u0027, revision: \u002776d78cf323ce037c5f92db6c1bba601c2ac43ad8\u0027, time: \u00272014-10-23 13:11:40\u0027\nSystem info: host: \u0027p5wDH\u0027, ip: \u002710.0.0.5\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_172\u0027\nDriver info: org.openqa.selenium.remote.RemoteWebDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir\u003dC:\\Users\\kmartin\\AppData\\Local\\Temp\\scoped_dir9140_17275}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d65.0.3325.181, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, webdriver.remote.sessionid\u003d82aa6ae72a19e9708c2e309454dc3cf3, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 82aa6ae72a19e9708c2e309454dc3cf3\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)\r\n\tat step_definitions.BrowserCommands.i_open_seleniumframework_website(BrowserCommands.java:19)\r\n\tat ✽.Given I open seleniumframework website(features/BrowserCommands.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "I open seleniumframework website",
+            "match": {
+              "location": "BrowserCommands.i_open_seleniumframework_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I perform selenium browser commands",
+            "match": {
+              "location": "BrowserCommands.i_perform_selenium_browser_commands()"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
     ],
+    "name": "seleniumframework.com features",
+    "description": "",
+    "id": "seleniumframework.com-features",
+    "keyword": "Feature",
     "uri": "features/BrowserCommands.feature"
   },
   {
-    "id": "addition",
-    "description": "As a math idiot\r\nIn order to not feel silly\r\nI add two numbers",
-    "name": "Addition",
-    "keyword": "Feature",
     "line": 1,
     "elements": [
       {
-        "after": [
-          {
-            "result": {
-              "duration": 1233180474,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "id": "addition;adding-a-and-b",
         "before": [
           {
             "result": {
-              "duration": 9100182723,
+              "duration": 3941169606,
               "status": "passed"
             },
             "match": {
@@ -164,63 +157,145 @@
             }
           }
         ],
+        "line": 2,
+        "name": "check info banner on ICD page",
         "description": "",
-        "name": "Adding a and b",
-        "keyword": "Scenario",
-        "line": 5,
-        "steps": [
+        "id": "test-icd-page-https://icdportal.info/;check-info-banner-on-icd-page",
+        "after": [
           {
             "result": {
-              "duration": 108719,
+              "duration": 84073250,
               "status": "passed"
             },
-            "name": "I have variable a",
-            "keyword": "Given ",
-            "line": 6,
             "match": {
-              "location": "Addition.i_have_variable_a()"
-            }
-          },
-          {
-            "result": {
-              "duration": 49460,
-              "status": "passed"
-            },
-            "name": "I have variable b",
-            "keyword": "And ",
-            "line": 7,
-            "match": {
-              "location": "Addition.i_have_variable_b()"
-            }
-          },
-          {
-            "result": {
-              "duration": 57860,
-              "status": "passed"
-            },
-            "name": "I add a and b",
-            "keyword": "When ",
-            "line": 8,
-            "match": {
-              "location": "Addition.i_add_a_and_b()"
-            }
-          },
-          {
-            "result": {
-              "duration": 287430,
-              "status": "passed"
-            },
-            "name": "I display the sum",
-            "keyword": "Then ",
-            "line": 9,
-            "match": {
-              "location": "Addition.i_display_the_sum()"
+              "location": "Hooks.embedScreenshot(Scenario)"
             }
           }
         ],
-        "type": "scenario"
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1076480,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat step_definitions.ICDportal.i_open_the_ICD_website(ICDportal.java:15)\r\n\tat ✽.Given I open the ICD website(features/ICDportal.feature:3)\r\n",
+              "status": "pending"
+            },
+            "line": 3,
+            "name": "I open the ICD website",
+            "match": {
+              "location": "ICDportal.i_open_the_ICD_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "Info banner displays with the correct informaion",
+            "match": {
+              "location": "ICDportal.info_banner_displays_with_the_correct_informaion()"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
     ],
+    "name": "Test ICD page https://icdportal.info/",
+    "description": "",
+    "id": "test-icd-page-https://icdportal.info/",
+    "keyword": "Feature",
+    "uri": "features/ICDportal.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4055462086,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Adding a and b",
+        "description": "",
+        "id": "addition;adding-a-and-b",
+        "after": [
+          {
+            "result": {
+              "duration": 59894931,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 67557,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have variable a",
+            "match": {
+              "location": "Addition.i_have_variable_a()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13648,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have variable b",
+            "match": {
+              "location": "Addition.i_have_variable_b()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13989,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I add a and b",
+            "match": {
+              "location": "Addition.i_add_a_and_b()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 145692,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I display the sum",
+            "match": {
+              "location": "Addition.i_display_the_sum()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Addition",
+    "description": "As a math idiot\nIn order to not feel silly\nI add two numbers",
+    "id": "addition",
+    "keyword": "Feature",
     "uri": "features/addition.feature"
   }
 ]

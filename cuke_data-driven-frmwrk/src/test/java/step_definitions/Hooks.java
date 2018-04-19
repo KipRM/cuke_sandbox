@@ -5,10 +5,9 @@ import java.net.URL;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+//import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import cucumber.api.Scenario;
@@ -33,7 +32,7 @@ public class Hooks{
         String seleniumSrvPort="4444";
    	 driver = new RemoteWebDriver(new URL("http://"+ seleniumSrvHost+":"+seleniumSrvPort +"/wd/hub"), chromeBrowser);
     	driver.manage().deleteAllCookies();
-    	driver.manage().window().maximize();
+    	//driver.manage().window().maximize();
     }
 
      
