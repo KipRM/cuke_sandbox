@@ -1,0 +1,158 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 12,
+            "value": "#    |1_retry for Test case 5 find correct ICD|Google|https://www.google.com|Institutional Cash Distributors|.//*[contains(@href,\u0027icdportal.info/about\u0027)]|icdportal.info/about-icd||"
+          },
+          {
+            "line": 13,
+            "value": "#    |2_retry for Test case 5 find correct ICD|Google|https://www.google.com|ICD Portal|.//*[contains(@href,\u0027icdportal.info/about\u0027)]|icdportal.info/about-icd||"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 3979138127,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "For Test case 5, Moved this in front to show passing steps first additional tests retrying with changed locators and changed the Then code to pull web element locations least expensive way of finding which Search results is the correct ICD",
+        "description": "",
+        "id": "search-sites-for-icd;for-test-case-5,-moved-this-in-front-to-show-passing-steps-first-additional-tests-retrying-with-changed-locators-and-changed-the-then-code-to-pull-web-element-locations-least-expensive-way-of-finding-which-search-results-is-the-correct-icd;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 89964717,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 450682038,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "^I have navigated to \"Bing\"  for test case \"3_retry for Test case 5 find correct ICD\" Search https://www.bing.com for \"Institutional Cash Distributors\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bing\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"3_retry for Test case 5 find correct ICD\"",
+                  "offset": 43
+                },
+                {
+                  "val": "https://www.bing.com",
+                  "offset": 93
+                },
+                {
+                  "val": "\"Institutional Cash Distributors\"",
+                  "offset": 118
+                }
+              ],
+              "location": "SearchSite_forString.i_have_navigated_to_for_test_case_Search_for(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10522549,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on search site \"Bing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bing",
+                  "offset": 21
+                }
+              ],
+              "location": "SearchSite_forString.i_am_on_search_site(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 986830437,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have entered a search for \"Institutional Cash Distributors\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Institutional Cash Distributors",
+                  "offset": 29
+                }
+              ],
+              "location": "SearchSite_forString.i_have_entered_a_search_for(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6641424720,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify ICD portal is the first result using locator \"(.//*[contains(@href,\u0027icdportal.info/about\u0027)])[3]\" and contains href \"icdportal.info/about-icd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "(.//*[contains(@href,\u0027icdportal.info/about\u0027)])[3]",
+                  "offset": 53
+                },
+                {
+                  "val": "icdportal.info/about-icd",
+                  "offset": 123
+                }
+              ],
+              "location": "SearchSite_forString.verify_ICD_portal_is_the_first_result_using_locator(String,String)"
+            },
+            "matchedColumns": [
+              4,
+              5
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search sites for ICD",
+    "description": "",
+    "id": "search-sites-for-icd",
+    "keyword": "Feature",
+    "uri": "features/SearchSite_forString.feature"
+  }
+]
